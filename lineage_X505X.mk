@@ -14,7 +14,7 @@ $(call inherit-product, device/lenovo/TB-X505X/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_tablet.mk)
 
 PRODUCT_DEVICE := TB-X505X
-PRODUCT_NAME := lineage_TB-X505X
+PRODUCT_NAME := lineage_X505X
 PRODUCT_BRAND := Lenovo
 PRODUCT_MODEL := Lenovo TB-X505X
 PRODUCT_MANUFACTURER := lenovo
