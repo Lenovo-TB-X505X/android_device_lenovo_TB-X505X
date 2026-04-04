@@ -141,10 +141,9 @@ vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libswdap.so
 
 # Audio configs
-etc/audio_effects.conf
+vendor/etc/audio_effects.conf
 vendor/etc/audio/audio_policy_configuration.xml
 vendor/etc/a2dp_audio_policy_configuration.xml
-vendor/etc/audio_effects.conf
 vendor/etc/audio_effects.xml
 vendor/etc/audio_platform_info.xml
 vendor/etc/audio_platform_info_extcodec.xml
@@ -214,10 +213,6 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so
 
 # Camera
-lib/libmmcamera_faceproc.so
-lib/libmmcamera_faceproc2.so
-lib64/libmmcamera_faceproc.so
-lib64/libmmcamera_faceproc2.so
 product/lib/vendor.qti.hardware.camera.device@1.0.so
 product/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
 product/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
@@ -751,9 +746,9 @@ vendor/lib64/libcdsprpc.so
 vendor/lib64/libfastcvopt.so
 
 # CNE
-etc/cne/Nexus/ATT/ATT_profiles.xml
-etc/cne/Nexus/ROW/ROW_profiles.xml
-etc/cne/Nexus/VZW/VZW_profiles.xml
+system/etc/cne/Nexus/ATT/ATT_profiles.xml
+system/etc/cne/Nexus/ROW/ROW_profiles.xml
+system/etc/cne/Nexus/VZW/VZW_profiles.xml
 product/lib/com.quicinc.cne.api@1.0.so
 product/lib/com.quicinc.cne.api@1.1.so
 product/lib/com.quicinc.cne.constants@1.0.so
@@ -887,8 +882,8 @@ vendor/lib/vendor.qti.hardware.cvp@1.0.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
 # Display
-lib/egl/libGLES_android.so
-lib64/egl/libGLES_android.so
+system/lib/egl/libGLES_android.so
+system/lib64/egl/libGLES_android.so
 product/lib/vendor.display.color@1.0.so
 product/lib/vendor.display.color@1.1.so
 product/lib/vendor.display.color@1.2.so
@@ -1264,19 +1259,18 @@ vendor/lib/hw/local_time.default.so
 vendor/lib64/hw/local_time.default.so
 
 # Media
-etc/seccomp_policy/mediacodec.policy
-lib/libFileMux.so
-lib/libOmxMux.so
-lib/libmmosal.so
-lib/libmmparser_lite.so
-lib/libstagefright_bufferpool@2.0.1.so
-lib/libstagefright_codecbase.so
-lib64/libFileMux.so
-lib64/libOmxMux.so
-lib64/libmmosal.so
-lib64/libmmparser_lite.so
-lib64/libstagefright_bufferpool@2.0.1.so
-lib64/libstagefright_codecbase.so
+system/lib/libFileMux.so
+system/lib/libOmxMux.so
+system/lib/libmmosal.so
+system/lib/libmmparser_lite.so
+system/lib/libstagefright_bufferpool@2.0.1.so
+system/lib/libstagefright_codecbase.so
+system/lib64/libFileMux.so
+system/lib64/libOmxMux.so
+system/lib64/libmmosal.so
+system/lib64/libmmparser_lite.so
+system/lib64/libstagefright_bufferpool@2.0.1.so
+system/lib64/libstagefright_codecbase.so
 product/lib/vendor.qti.hardware.vpp@1.1.so
 product/lib/vendor.qti.hardware.vpp@1.2.so
 product/lib64/vendor.qti.hardware.vpp@1.1.so
@@ -1371,8 +1365,6 @@ vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so
 vendor/lib64/vendor.dolby.hardware.dms@1.0.so
 
 # Media configs
-etc/media_profiles.xml
-etc/media_profiles_8956.xml
 vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_8937_v1.xml
 vendor/etc/media_codecs_8956.xml
@@ -1394,8 +1386,8 @@ vendor/lib/vendor.qti.power.pasrmanager@1.0.so
 vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
 
 # Perf
-etc/perf/wlc_model.tflite
-etc/powerhint.xml
+system/etc/perf/wlc_model.tflite
+system/etc/powerhint.xml
 product/lib/vendor.qti.hardware.perf@1.0.so
 product/lib/vendor.qti.hardware.perf@2.0.so
 product/lib64/vendor.qti.hardware.perf@1.0.so
@@ -1797,8 +1789,6 @@ vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
 
 # Touch (HBTP)
-lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
-lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
 vendor/bin/hbtp_daemon
 vendor/etc/hbtp/hbtpcfg.dat
 vendor/etc/hbtp/hbtpcfg2.dat
@@ -1887,43 +1877,42 @@ vendor/etc/wifi/wpa_supplicant.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # Wi-Fi Display
-bin/wfdservice
-etc/init/wfdservice.rc
-etc/wfdconfig.xml
-lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so
-lib/com.qualcomm.qti.wifidisplayhal@1.0.so
-lib/libaacwrapper.so
-lib/libdisplayconfig.so
-lib/libmiracastsystem.so
-lib/libmmrtpdecoder.so
-lib/libmmrtpencoder.so
-lib/libqdMetaData.system.so
-lib/libwfdavenhancements.so
-lib/libwfdclient.so
-lib/libwfdcodecv4l2.so
-lib/libwfdcommonutils.so
-lib/libwfdconfigutils.so
-lib/libwfdmminterface.so
-lib/libwfdmmsink.so
-lib/libwfdmmsrc.so
-lib/libwfdrtsp.so
-lib/libwfdservice.so
-lib/libwfdsm.so
-lib/libwfduibcinterface.so
-lib/libwfduibcsink.so
-lib/libwfduibcsinkinterface.so
-lib/libwfduibcsrc.so
-lib/libwfduibcsrcinterface.so
-lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so
-lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so
-lib64/libdisplayconfig.so
-lib64/libmiracastsystem.so
-lib64/libmmrtpdecoder.so
-lib64/libmmrtpencoder.so
-lib64/libqdMetaData.system.so
-lib64/libwfdclient.so
-lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so
-priv-app/WfdService/WfdService.apk
+system/bin/wfdservice
+system/etc/init/wfdservice.rc
+system/etc/wfdconfig.xml
+system/lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so
+system/lib/libaacwrapper.so
+system/lib/libdisplayconfig.so
+system/lib/libmiracastsystem.so
+system/lib/libmmrtpdecoder.so
+system/lib/libmmrtpencoder.so
+system/lib/libqdMetaData.system.so
+system/lib/libwfdavenhancements.so
+system/lib/libwfdclient.so
+system/lib/libwfdcodecv4l2.so
+system/lib/libwfdcommonutils.so
+system/lib/libwfdconfigutils.so
+system/lib/libwfdmminterface.so
+system/lib/libwfdmmsink.so
+system/lib/libwfdmmsrc.so
+system/lib/libwfdrtsp.so
+system/lib/libwfdservice.so
+system/lib/libwfdsm.so
+system/lib/libwfduibcinterface.so
+system/lib/libwfduibcsink.so
+system/lib/libwfduibcsinkinterface.so
+system/lib/libwfduibcsrc.so
+system/lib/libwfduibcsrcinterface.so
+system/lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so
+system/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so
+system/lib64/libdisplayconfig.so
+system/lib64/libmiracastsystem.so
+system/lib64/libmmrtpdecoder.so
+system/lib64/libmmrtpencoder.so
+system/lib64/libqdMetaData.system.so
+system/lib64/libwfdclient.so
+system/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so
+system/priv-app/WfdService/WfdService.apk
 product/lib/vendor.qti.hardware.sigma_miracast@1.0.so
 product/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
 vendor/bin/wifidisplayhalservice
